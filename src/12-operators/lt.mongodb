@@ -1,0 +1,9 @@
+use("platzi_store")
+
+//Using $lt (<) $lte (<=)
+
+db.inventory.find({
+    qty: {
+        $lt: 20
+    }
+})
