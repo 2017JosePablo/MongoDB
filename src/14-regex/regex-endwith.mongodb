@@ -1,0 +1,8 @@
+use("platzi_store")
+
+db.inventory.find({
+    "item.description": {
+        //insensity
+        $regex: /line$/i
+    }
+})
