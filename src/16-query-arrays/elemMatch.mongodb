@@ -1,6 +1,6 @@
 use("platzi_store")
 
-//This is something like AND
+//The elemMatch Only work with array objects
 db.survey.find({
     results: {
         $elemMatch: {
