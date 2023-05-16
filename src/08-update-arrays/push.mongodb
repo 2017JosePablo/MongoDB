@@ -1,0 +1,11 @@
+use("platzi_store")
+
+//Add element at the of array
+db.inventory.updateOne({
+    _id: 1
+}, {
+    //Operator only for array
+    $push: {
+        tags: "headphone"
+    }
+})

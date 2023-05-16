@@ -1,0 +1,10 @@
+use("platzi_store")
+
+db.inventory.updateMany({}, {
+    //Operator only for array
+    $pull: {
+        tags: {
+            $in: ["school", "appliance"] 
+        }
+    }
+})
