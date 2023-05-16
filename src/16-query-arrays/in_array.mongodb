@@ -1,0 +1,9 @@
+use("platzi_store")
+
+//$in, object , values, array
+//Similar to OR
+db.inventory.find({
+    tags: {
+        $in: ['book', 'electronics']
+    }
+})

@@ -1,0 +1,15 @@
+use("platzi_store")
+
+//This is something like AND
+db.survey.find({
+    results: {
+        $elemMatch: {
+            product: {
+                $eq: "xyz"
+            },
+            score: {
+                $gte: 7
+            }
+        }
+    }
+})

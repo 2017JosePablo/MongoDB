@@ -1,0 +1,8 @@
+use("platzi_store")
+
+//This is something like AND
+db.inventory.find({
+    tags: {
+        $all: ["book", "school"]
+    }
+})

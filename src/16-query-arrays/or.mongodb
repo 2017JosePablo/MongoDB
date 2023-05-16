@@ -1,0 +1,9 @@
+use("platzi_store")
+
+//$in, object , values, array
+//Similar to OR
+db.inventory.find({
+    qty: {
+        $in: [20, 25]
+    }
+})

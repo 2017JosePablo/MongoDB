@@ -1,0 +1,8 @@
+use("platzi_store")
+
+//The array should has only 2 elements
+db.inventory.find({
+    tags: {
+        $size: 2
+    }
+})

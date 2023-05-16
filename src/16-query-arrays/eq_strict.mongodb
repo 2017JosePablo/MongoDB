@@ -1,0 +1,6 @@
+use("platzi_store")
+
+//The position should be the same
+db.inventory.find({
+    tags: ["school", "book"]
+})
