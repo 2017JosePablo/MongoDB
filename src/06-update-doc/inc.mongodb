@@ -1,0 +1,15 @@
+use("platzi_store")
+
+db.products.updateOne(
+    {
+        //If we are going to use the AI from MongoDB, we should use the function called ObjectId('')
+        //_id: 1
+        _id: ObjectId('6463b47cd3d67dc4b830ff53')
+    }, 
+    {
+        //Change => Operator
+        $inc: {
+            price: 100
+        }
+    }
+)

@@ -1,0 +1,8 @@
+use("platzi_store")
+
+db.products.insert({
+    name: "Product AI",
+    price: 1000,
+    currency: "USD",
+    tag: []
+})
