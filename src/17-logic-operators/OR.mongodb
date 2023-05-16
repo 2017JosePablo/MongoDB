@@ -1,0 +1,14 @@
+use("sample_training")
+
+//THIS IS AN OR EXPLICIT
+//$or: [{}, {}]
+db.inspections.find({
+    $or: [
+        {
+            sector: "Tax Preparers - 891",
+        },
+        {
+            result: "Unable to Locate"
+        }
+    ]
+}).count()

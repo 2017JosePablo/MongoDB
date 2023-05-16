@@ -1,0 +1,9 @@
+use("sample_training")
+
+db.inspections.find({
+    result: {
+        $not: {
+            $regex:/Unable to Located/
+        }
+    }
+}).count()
